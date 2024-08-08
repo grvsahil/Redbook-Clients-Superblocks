@@ -1,0 +1,32 @@
+blocks:
+  - name: Step1
+    step:
+      gsheets:
+        action: CREATE_SPREADSHEET_ROWS
+        data: |-
+          [
+          	{
+          		"Name":"{{Name.value}}",
+          		"Email":"{{Email.value}}",
+          		"Contact Name":"{{Contact_Name.value}}",
+          		"Designation":"{{Designation.value}}",
+          		"Location":"{{Location.value}}",
+          		"Currency":"{{Currency.value}}",
+          		"Notes":"{{Notes.value}}"
+          	}
+          ]
+        extractFirstRowHeader: false
+        includeHeaderRow: false
+        preserveHeaderRow: false
+        sheetTitle: Sheet1
+        spreadsheetId: 11mCNCuKQGpoWCkLjsTKrbGrmQUtQCIpFYZWx_uqF04A
+        writeToDestinationType: APPEND
+      integration: 40329f7a-7f75-42c1-90c1-a3685dfcdecc
+metadata:
+  id: 0d88f7e2-ea47-4488-abaa-0e75725048f3
+  name: postClients
+  organization: 7f3ff8ab-bfe7-4300-9e85-574f5781668c
+trigger:
+  application:
+    id: 0a15cf9a-8466-4489-bc08-6b9d3c53efd4
+    pageId: f52f4c96-d387-448a-9411-bfd0161251da

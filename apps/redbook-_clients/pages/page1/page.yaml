@@ -1,0 +1,4308 @@
+applicationId: 0a15cf9a-8466-4489-bc08-6b9d3c53efd4
+id: f52f4c96-d387-448a-9411-bfd0161251da
+isHidden: false
+layouts:
+  - dsl:
+      apis:
+        apiMap:
+          0d88f7e2-ea47-4488-abaa-0e75725048f3:
+            dynamicTriggerPathList:
+              - key: onError
+            id: 0d88f7e2-ea47-4488-abaa-0e75725048f3
+            onError:
+              - id: e22ff0c5-430d-4184-a60a-243ab1f14064
+                message: "{{postClients.error}}"
+                style: error
+                type: showAlert
+          36df8434-9547-472f-87b0-b6be8d69b27d:
+            dynamicTriggerPathList:
+              - key: onError
+            id: 36df8434-9547-472f-87b0-b6be8d69b27d
+            onError:
+              - id: 744f5299-457f-4f94-8716-f8b766b44adb
+                message: "{{API1.error}}"
+                style: error
+                type: showAlert
+          43050da1-128a-4c0c-8937-e2328d8eeff6:
+            dynamicTriggerPathList:
+              - key: onError
+            id: 43050da1-128a-4c0c-8937-e2328d8eeff6
+            onError:
+              - id: 51930694-9504-4ad7-9e0e-ee352437f10f
+                message: "{{getCities.error}}"
+                style: error
+                type: showAlert
+          73dccd33-9858-4d9c-826d-e5355e29e26c:
+            dynamicTriggerPathList:
+              - key: onError
+            id: 73dccd33-9858-4d9c-826d-e5355e29e26c
+            onError:
+              - id: 824acce7-c973-4df0-a4ca-a447783596ad
+                message: "{{Gaurav's Awesome Workflow.error}}"
+                style: error
+                type: showAlert
+          7cfe6b1a-2dbb-4fd7-afe5-5e8de4dd7e13:
+            dynamicTriggerPathList:
+              - key: onError
+            id: 7cfe6b1a-2dbb-4fd7-afe5-5e8de4dd7e13
+            onError:
+              - id: f4332703-2dc1-43ce-a4c7-2ac4a94356d1
+                message: "{{getClients.error}}"
+                style: error
+                type: showAlert
+          7ff64598-953c-43cc-83fb-f76ec12c2141:
+            dynamicTriggerPathList:
+              - key: onError
+            id: 7ff64598-953c-43cc-83fb-f76ec12c2141
+            onError:
+              - id: c63b4745-8ee5-4259-9368-e5cfab54f918
+                message: "{{updateClient.error}}"
+                style: error
+                type: showAlert
+          81efc646-43f1-4dc2-a222-09d611ae19d6:
+            dynamicTriggerPathList:
+              - key: onError
+            id: 81efc646-43f1-4dc2-a222-09d611ae19d6
+            onError:
+              - id: 2ee4392e-854e-4eed-8a84-a179dd181bc8
+                message: "{{API2.error}}"
+                style: error
+                type: showAlert
+          a3ba5821-e7f9-44ef-b127-40f339908db1:
+            dynamicTriggerPathList:
+              - key: onError
+            id: a3ba5821-e7f9-44ef-b127-40f339908db1
+            onError:
+              - id: da4295be-99d6-4667-bf2b-03750d58d197
+                message: "{{API3.error}}"
+                style: error
+                type: showAlert
+          d80bc15f-fdf8-4ab5-bc69-099bd63430b7:
+            dynamicTriggerPathList:
+              - key: onError
+            id: d80bc15f-fdf8-4ab5-bc69-099bd63430b7
+            onError:
+              - id: 213b8854-4e99-4a2f-b1bd-12e575c0996f
+                message: "{{getCurrencies.error}}"
+                style: error
+                type: showAlert
+          d9f700cf-9cb9-41d9-85cb-9a6824e3accb:
+            dynamicTriggerPathList:
+              - key: onError
+            id: d9f700cf-9cb9-41d9-85cb-9a6824e3accb
+            onError:
+              - id: 512ebf2a-9842-4760-95b1-e92978e784b2
+                message: "{{API4.error}}"
+                style: error
+                type: showAlert
+          f306a846-9857-4706-9837-ad0b02bbcc63:
+            dynamicTriggerPathList:
+              - key: onError
+            id: f306a846-9857-4706-9837-ad0b02bbcc63
+            onError:
+              - id: 498d07b0-0982-4a7e-9009-8f45f00b5d13
+                message: "{{Gaurav's Awesome Workflow.error}}"
+                style: error
+                type: showAlert
+      cachedData:
+        pageLoadActions:
+          apiDeps:
+            getCities: []
+            getClients: []
+            getCurrencies: []
+          apiNames:
+            - getCities
+            - getClients
+            - getCurrencies
+      canExtend: true
+      children:
+        - canExtend: true
+          children:
+            - alignment: LEFT
+              canExtend: true
+              children:
+                - animateLoading: true
+                  appMode: EDIT
+                  cachedColumnSettings:
+                    action:
+                      buttonLabel: Approve
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.location })}}"
+                      editInputType: TEXT
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: action
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 5
+                      isDerived: false
+                      isEditable: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: Location
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.action })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.action })}}"
+                      notation: standard
+                      onClick:
+                        - code: showAlert(currentRow.name + ' is approved!', 'success')
+                          id: id0
+                          newWindow: true
+                          type: runJs
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    attributes:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.attributes.Name })}}"
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: attributes
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 0
+                      isDerived: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: Name
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.attributes })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.attributes })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    contact_name:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.contact_name })}}"
+                      editInputType: TEXT
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: contact_name
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 2
+                      isDerived: false
+                      isEditable: false
+                      isEditableOnInsertion: true
+                      isVisible: false
+                      label: contact_name
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.contact_name })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.contact_name })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    currency:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.currency })}}"
+                      editInputType: TEXT
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: currency
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 5
+                      isDerived: false
+                      isEditable: false
+                      isEditableOnInsertion: true
+                      isVisible: false
+                      label: currency
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.currency })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.currency })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    date_joined:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.contact_name })}}"
+                      editInputType: DATE
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: date_joined
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 2
+                      inputFormat: YYYY-MM-DD
+                      isDerived: false
+                      isEditable: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: Contact Name
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.date_joined })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.date_joined })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      outputFormat: MM-DD-YYYY
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    designation:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.email })}}"
+                      editInputType: TEXT
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: designation
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 2
+                      isDerived: false
+                      isEditable: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: Email
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.designation })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.designation })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    email:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.contact_name })}}"
+                      editInputType: TEXT
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: email
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 4
+                      isDerived: false
+                      isEditable: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: Contact Name
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.email })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.email })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    location:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.designation })}}"
+                      editInputType: TEXT
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: location
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 3
+                      isDerived: false
+                      isEditable: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: Designation
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.location })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.location })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    name:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.name })}}"
+                      editInputType: TEXT
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: name
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 0
+                      isDerived: false
+                      isEditable: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: Name
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.name })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.name })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    notes:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.notes })}}"
+                      editInputType: TEXT
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: notes
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 7
+                      isDerived: false
+                      isEditable: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: notes
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.notes })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.notes })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    photo:
+                      columnType: image
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.photo })}}"
+                      editInputType: TEXT
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: photo
+                      imageBorderRadius:
+                        mode: "%"
+                        value: 50
+                      imageSize: FIXED
+                      index: 3
+                      isDerived: false
+                      isEditable: true
+                      isEditableOnInsertion: true
+                      isVisible: false
+                      label: Invis
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.photo })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.photo })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    status:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.status })}}"
+                      editInputType: TEXT
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: status
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 6
+                      isDerived: false
+                      isEditable: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: status
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.status })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.status })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    twitter:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.email })}}"
+                      editInputType: TEXT
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: twitter
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 1
+                      isDerived: false
+                      isEditable: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: Email
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return '@' +
+                        currentRow.twitter?.split('/').pop()})}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.twitter })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                  collapseWhenHidden: true
+                  columnOrder:
+                    - Contact Name
+                    - Currency
+                    - Designation
+                    - Email
+                    - Location
+                    - Name
+                    - Notes
+                    - customColumn4
+                  compactMode: SHORT
+                  defaultFilters: "{}"
+                  defaultSelectedRow: "0"
+                  defaultSort: ""
+                  derivedColumns:
+                    customColumn4:
+                      buttonLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        'Edit'})}}"
+                      columnType: button
+                      computedValue: ""
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: customColumn4
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 9
+                      isDerived: true
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: Action
+                      linkLabel: ""
+                      linkUrl: ""
+                      notation: standard
+                      onClick:
+                        - apiNames:
+                            - postClients
+                          id: uje5kbk7cl
+                          type: executeApi
+                        - apiNames:
+                            - postClients
+                          id: p0oz1seeuu
+                          name: Modal1
+                          type: controlModal
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                  dynamicBindingPathList:
+                    - key: derivedColumns.customColumn4.buttonLabel
+                    - key: primaryColumns.customColumn4.cellIcon
+                    - key: tableData
+                    - key: primaryColumns['Contact Name'].computedValue
+                    - key: primaryColumns['Contact Name'].linkUrl
+                    - key: primaryColumns['Contact Name'].linkLabel
+                    - key: primaryColumns.Currency.computedValue
+                    - key: primaryColumns.Currency.linkUrl
+                    - key: primaryColumns.Currency.linkLabel
+                    - key: primaryColumns.Designation.computedValue
+                    - key: primaryColumns.Designation.linkUrl
+                    - key: primaryColumns.Designation.linkLabel
+                    - key: primaryColumns.Email.computedValue
+                    - key: primaryColumns.Email.linkUrl
+                    - key: primaryColumns.Email.linkLabel
+                    - key: primaryColumns.Location.computedValue
+                    - key: primaryColumns.Location.linkUrl
+                    - key: primaryColumns.Location.linkLabel
+                    - key: primaryColumns.Name.computedValue
+                    - key: primaryColumns.Name.linkUrl
+                    - key: primaryColumns.Name.linkLabel
+                    - key: primaryColumns.Notes.computedValue
+                    - key: primaryColumns.Notes.linkUrl
+                    - key: primaryColumns.Notes.linkLabel
+                  dynamicPropertyPathList:
+                    - key: defaultSort
+                    - key: enableRowInsertion
+                  dynamicTriggerPathList:
+                    - key: onRowClicked
+                    - key: onSaveChanges
+                    - key: onCancelChanges
+                    - key: primaryColumns.customColumn4.onClick
+                  enableRowInsertion: "false"
+                  gridColumns: 82
+                  height:
+                    mode: gridUnit
+                    value: 76
+                  horizontalAlignment: LEFT
+                  isDownloadable: false
+                  isFilterable: true
+                  isLoading: false
+                  isSearchable: false
+                  isVisible: true
+                  label: Data
+                  left:
+                    mode: gridUnit
+                    value: 14
+                  onCancelChanges:
+                    - id: zkvt7v3sb8
+                  onRowClicked:
+                    - id: azj8mkk16t
+                      name: Client_details_slideout
+                      type: controlSlideout
+                  onSaveChanges:
+                    - id: o4qjrxii8e
+                  pageType: NONE
+                  parentId: dwpvpsnarl
+                  primaryColumns:
+                    Contact Name:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow['Contact Name'] })}}"
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: Contact Name
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 0
+                      isDerived: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: Contact Name
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow['Contact Name'] })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow['Contact Name'] })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    Currency:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Currency })}}"
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: Currency
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 1
+                      isDerived: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: Currency
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Currency })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Currency })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    Designation:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Designation })}}"
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: Designation
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 2
+                      isDerived: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: Designation
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Designation })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Designation })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    Email:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Email })}}"
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: Email
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 3
+                      isDerived: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: Email
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Email })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Email })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    Location:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Location })}}"
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: Location
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 4
+                      isDerived: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: Location
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Location })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Location })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    Name:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Name })}}"
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: Name
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 5
+                      isDerived: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: Name
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Name })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Name })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    Notes:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Notes })}}"
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: Notes
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 6
+                      isDerived: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: Notes
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Notes })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.Notes })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    customColumn4:
+                      buttonLabel: ""
+                      cellIcon: "{{ icons.edit }}"
+                      columnType: button
+                      computedValue: ""
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: customColumn4
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 9
+                      isDerived: true
+                      isEditableOnInsertion: false
+                      isVisible: true
+                      label: Action
+                      linkLabel: ""
+                      linkUrl: ""
+                      notation: standard
+                      onClick:
+                        - apiNames:
+                            - postClients
+                          id: p0oz1seeuu
+                          name: update_client_modal
+                          type: controlModal
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                  showColumnBorders: false
+                  tableData: "{{getClients.response}}"
+                  textSize: PARAGRAPH
+                  top:
+                    mode: gridUnit
+                    value: 6
+                  type: TABLE_WIDGET
+                  verticalAlignment: CENTER
+                  widgetId: 5kac76n0v3
+                  widgetName: Table1
+                  width:
+                    mode: gridUnit
+                    value: 82
+                - animateLoading: true
+                  appMode: EDIT
+                  backgroundColor: "{{ theme.colors.primary500 }}"
+                  buttonStyle: PRIMARY_BUTTON
+                  collapseWhenHidden: true
+                  docsUrl: https://docs.superblocks.com/components/button
+                  dynamicBindingPathList:
+                    - key: backgroundColor
+                  dynamicPropertyPathList:
+                    - key: isVisible
+                  dynamicTriggerPathList:
+                    - key: onClick
+                  gridColumns: 8
+                  height:
+                    mode: gridUnit
+                    value: 3
+                  iconPosition: LEFT
+                  isDefaultClickDisabled: true
+                  isDisabled: false
+                  isLoading: false
+                  isVisible: "true"
+                  left:
+                    mode: gridUnit
+                    value: 88
+                  onClick:
+                    - id: 98802b1wnl
+                      name: add_client_modal
+                      type: controlModal
+                  parentId: dwpvpsnarl
+                  text: Add Client
+                  top:
+                    mode: gridUnit
+                    value: 2
+                  type: BUTTON_WIDGET
+                  widgetId: m8acxs3ld0
+                  widgetName: Button1
+                  width:
+                    mode: gridUnit
+                    value: 8
+                - appMode: EDIT
+                  backgroundColor: "{{ theme.colors.neutral100 }}"
+                  children:
+                    - appMode: EDIT
+                      canExtend: false
+                      children:
+                        - animateLoading: true
+                          appMode: EDIT
+                          collapseWhenHidden: true
+                          dynamicBindingPathList:
+                            - key: textColor
+                          dynamicTriggerPathList: []
+                          gridColumns: 82
+                          height:
+                            mode: fitContent
+                            value: 2
+                          isLoading: false
+                          isVisible: true
+                          left:
+                            mode: gridUnit
+                            value: 0
+                          parentId: xy1avvcvoa
+                          text: Copyright @Redbook 2024.
+                          textAlign: LEFT
+                          textColor: "{{ theme.colors.primary500 }}"
+                          textStyle: LABEL
+                          textType: text
+                          top:
+                            mode: gridUnit
+                            value: 0
+                          type: TEXT_WIDGET
+                          verticalAlign: CENTER
+                          widgetId: qznsaoyumf
+                          widgetName: Text3
+                          width:
+                            mode: gridUnit
+                            value: 82
+                      collapseWhenHidden: true
+                      detachFromLayout: true
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList: []
+                      gridColumns: 82
+                      height:
+                        mode: fitContent
+                        value: 2
+                      isLoading: false
+                      isVisible: true
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      parentId: ice3hoa8su
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: CANVAS_WIDGET
+                      widgetId: xy1avvcvoa
+                      widgetName: Canvas6
+                      width:
+                        mode: gridUnit
+                        value: 82
+                  collapseWhenHidden: true
+                  dynamicBindingPathList:
+                    - key: backgroundColor
+                  dynamicTriggerPathList: []
+                  gridColumns: 82
+                  height:
+                    mode: gridUnit
+                    value: 4
+                  isLoading: false
+                  isVisible: true
+                  left:
+                    mode: gridUnit
+                    value: 14
+                  parentId: dwpvpsnarl
+                  shouldScrollContents: true
+                  top:
+                    mode: gridUnit
+                    value: 82
+                  type: CONTAINER_WIDGET
+                  widgetId: ice3hoa8su
+                  widgetName: Container1
+                  width:
+                    mode: gridUnit
+                    value: 82
+                - animateLoading: true
+                  appMode: EDIT
+                  collapseWhenHidden: true
+                  dynamicBindingPathList: []
+                  dynamicTriggerPathList: []
+                  gridColumns: 6
+                  height:
+                    mode: gridUnit
+                    value: 2
+                  isLoading: false
+                  isVisible: true
+                  left:
+                    mode: gridUnit
+                    value: 14
+                  parentId: dwpvpsnarl
+                  shouldScroll: false
+                  text: Clients
+                  textAlign: LEFT
+                  textStyle: LABEL
+                  textType: text
+                  top:
+                    mode: gridUnit
+                    value: 0
+                  type: TEXT_WIDGET
+                  verticalAlign: AUTO
+                  widgetId: 829cj58ziq
+                  widgetName: Text4
+                  width:
+                    mode: gridUnit
+                    value: 6
+                - animateLoading: true
+                  appMode: EDIT
+                  collapseWhenHidden: true
+                  dynamicBindingPathList:
+                    - key: text
+                  dynamicTriggerPathList: []
+                  gridColumns: 11
+                  height:
+                    mode: fitContent
+                    value: 2
+                  isLoading: false
+                  isVisible: true
+                  left:
+                    mode: gridUnit
+                    value: 14
+                  parentId: dwpvpsnarl
+                  text: "Total Clients: {{Table1.tableData.length}}"
+                  textAlign: LEFT
+                  textStyle: LABEL
+                  textType: text
+                  top:
+                    mode: gridUnit
+                    value: 4
+                  type: TEXT_WIDGET
+                  verticalAlign: AUTO
+                  widgetId: ueodpibe1w
+                  widgetName: Text5
+                  width:
+                    mode: gridUnit
+                    value: 11
+                - animateLoading: true
+                  appMode: EDIT
+                  collapseWhenHidden: true
+                  dynamicBindingPathList: []
+                  dynamicTriggerPathList: []
+                  gridColumns: 17
+                  height:
+                    mode: fitContent
+                    value: 2
+                  isLoading: false
+                  isVisible: true
+                  left:
+                    mode: gridUnit
+                    value: 14
+                  parentId: dwpvpsnarl
+                  text: List of clients
+                  textAlign: LEFT
+                  textStyle: LABEL
+                  textType: text
+                  top:
+                    mode: gridUnit
+                    value: 2
+                  type: TEXT_WIDGET
+                  verticalAlign: AUTO
+                  widgetId: otc5szxz47
+                  widgetName: Text6
+                  width:
+                    mode: gridUnit
+                    value: 17
+                - appMode: EDIT
+                  children:
+                    - appMode: EDIT
+                      canExtend: true
+                      children:
+                        - animateLoading: true
+                          appMode: EDIT
+                          collapseWhenHidden: true
+                          dynamicBindingPathList:
+                            - key: icon
+                          dynamicTriggerPathList: []
+                          gridColumns: 14
+                          height:
+                            mode: gridUnit
+                            value: 2
+                          icon: "{{ icons.home }}"
+                          isLoading: false
+                          isVisible: true
+                          left:
+                            mode: gridUnit
+                            value: 0
+                          parentId: ew772rnktp
+                          text: Dashboard
+                          textAlign: LEFT
+                          textStyle: LABEL
+                          textType: text
+                          top:
+                            mode: gridUnit
+                            value: 1
+                          type: TEXT_WIDGET
+                          verticalAlign: AUTO
+                          widgetId: 564w6rdu3n
+                          widgetName: Text9
+                          width:
+                            mode: gridUnit
+                            value: 14
+                        - animateLoading: true
+                          appMode: EDIT
+                          collapseWhenHidden: true
+                          dynamicBindingPathList:
+                            - key: icon
+                          dynamicTriggerPathList: []
+                          gridColumns: 14
+                          height:
+                            mode: gridUnit
+                            value: 2
+                          icon: "{{ icons.calendar_month }}"
+                          isLoading: false
+                          isVisible: true
+                          left:
+                            mode: gridUnit
+                            value: 0
+                          parentId: ew772rnktp
+                          text: Clients
+                          textAlign: LEFT
+                          textStyle: LABEL
+                          textType: text
+                          top:
+                            mode: gridUnit
+                            value: 4
+                          type: TEXT_WIDGET
+                          verticalAlign: AUTO
+                          widgetId: grmnsb3tzs
+                          widgetName: Text10
+                          width:
+                            mode: gridUnit
+                            value: 14
+                        - animateLoading: true
+                          appMode: EDIT
+                          collapseWhenHidden: true
+                          dynamicBindingPathList:
+                            - key: icon
+                          dynamicTriggerPathList: []
+                          gridColumns: 14
+                          height:
+                            mode: gridUnit
+                            value: 2
+                          icon: "{{ icons.folder }}"
+                          isLoading: false
+                          isVisible: true
+                          left:
+                            mode: gridUnit
+                            value: 0
+                          parentId: ew772rnktp
+                          text: Projects
+                          textAlign: LEFT
+                          textStyle: LABEL
+                          textType: text
+                          top:
+                            mode: gridUnit
+                            value: 7
+                          type: TEXT_WIDGET
+                          verticalAlign: AUTO
+                          widgetId: h435i7waiu
+                          widgetName: Text11
+                          width:
+                            mode: gridUnit
+                            value: 14
+                        - animateLoading: true
+                          appMode: EDIT
+                          collapseWhenHidden: true
+                          dynamicBindingPathList:
+                            - key: icon
+                          dynamicTriggerPathList: []
+                          gridColumns: 14
+                          height:
+                            mode: gridUnit
+                            value: 2
+                          icon: "{{ icons.person }}"
+                          isLoading: false
+                          isVisible: true
+                          left:
+                            mode: gridUnit
+                            value: 0
+                          parentId: ew772rnktp
+                          text: Employees
+                          textAlign: LEFT
+                          textStyle: LABEL
+                          textType: text
+                          top:
+                            mode: gridUnit
+                            value: 10
+                          type: TEXT_WIDGET
+                          verticalAlign: AUTO
+                          widgetId: ge474fqwun
+                          widgetName: Text12
+                          width:
+                            mode: gridUnit
+                            value: 14
+                        - animateLoading: true
+                          appMode: EDIT
+                          collapseWhenHidden: true
+                          dynamicBindingPathList:
+                            - key: icon
+                          dynamicTriggerPathList: []
+                          gridColumns: 14
+                          height:
+                            mode: gridUnit
+                            value: 2
+                          icon: "{{ icons.language }}"
+                          isLoading: false
+                          isVisible: true
+                          left:
+                            mode: gridUnit
+                            value: 0
+                          parentId: ew772rnktp
+                          text: Beach
+                          textAlign: LEFT
+                          textStyle: LABEL
+                          textType: text
+                          top:
+                            mode: gridUnit
+                            value: 13
+                          type: TEXT_WIDGET
+                          verticalAlign: AUTO
+                          widgetId: ajxnsc5ew7
+                          widgetName: Text13
+                          width:
+                            mode: gridUnit
+                            value: 14
+                        - animateLoading: true
+                          appMode: EDIT
+                          collapseWhenHidden: true
+                          dynamicBindingPathList:
+                            - key: icon
+                          dynamicTriggerPathList: []
+                          gridColumns: 14
+                          height:
+                            mode: gridUnit
+                            value: 2
+                          icon: "{{ icons.person_add }}"
+                          isLoading: false
+                          isVisible: true
+                          left:
+                            mode: gridUnit
+                            value: 0
+                          parentId: ew772rnktp
+                          text: Open Needs
+                          textAlign: LEFT
+                          textStyle: LABEL
+                          textType: text
+                          top:
+                            mode: gridUnit
+                            value: 16
+                          type: TEXT_WIDGET
+                          verticalAlign: AUTO
+                          widgetId: p2wvm7n2jd
+                          widgetName: Text14
+                          width:
+                            mode: gridUnit
+                            value: 14
+                      collapseWhenHidden: true
+                      detachFromLayout: true
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList: []
+                      gridColumns: 14
+                      height:
+                        mode: gridUnit
+                        value: 18
+                      isLoading: false
+                      isVisible: true
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      parentId: yidcuitblx
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: CANVAS_WIDGET
+                      widgetId: ew772rnktp
+                      widgetName: Canvas7
+                      width:
+                        mode: gridUnit
+                        value: 14
+                  collapseWhenHidden: true
+                  dynamicBindingPathList: []
+                  dynamicTriggerPathList: []
+                  gridColumns: 14
+                  height:
+                    mode: gridUnit
+                    value: 80
+                  isLoading: false
+                  isVisible: true
+                  left:
+                    mode: gridUnit
+                    value: 0
+                  parentId: dwpvpsnarl
+                  shouldScrollContents: true
+                  top:
+                    mode: gridUnit
+                    value: 6
+                  type: CONTAINER_WIDGET
+                  widgetId: yidcuitblx
+                  widgetName: Container2
+                  width:
+                    mode: gridUnit
+                    value: 14
+                - appMode: EDIT
+                  children:
+                    - appMode: EDIT
+                      canExtend: false
+                      children:
+                        - animateLoading: true
+                          appMode: EDIT
+                          collapseWhenHidden: true
+                          color: "{{ theme.colors.danger }}"
+                          dynamicBindingPathList:
+                            - key: icon
+                            - key: color
+                          dynamicTriggerPathList:
+                            - key: onClick
+                          gridColumns: 3
+                          height:
+                            mode: gridUnit
+                            value: 3
+                          icon: "{{ icons.menu_book }}"
+                          isLoading: false
+                          isVisible: true
+                          left:
+                            mode: gridUnit
+                            value: 3
+                          onClick:
+                            - id: 4iskom02up
+                          parentId: yopzn1x3b4
+                          top:
+                            mode: gridUnit
+                            value: 0
+                          type: ICON_WIDGET
+                          widgetId: g918vditzq
+                          widgetName: Icon1
+                          width:
+                            mode: gridUnit
+                            value: 3
+                        - animateLoading: true
+                          appMode: EDIT
+                          collapseWhenHidden: true
+                          dynamicBindingPathList:
+                            - key: textColor
+                          dynamicTriggerPathList: []
+                          gridColumns: 5
+                          height:
+                            mode: gridUnit
+                            value: 3
+                          isLoading: false
+                          isVisible: true
+                          left:
+                            mode: gridUnit
+                            value: 6
+                          parentId: yopzn1x3b4
+                          text: RedBook
+                          textAlign: LEFT
+                          textColor: "{{ theme.colors.primary500 }}"
+                          textStyle: LABEL
+                          textType: text
+                          top:
+                            mode: gridUnit
+                            value: 0
+                          type: TEXT_WIDGET
+                          verticalAlign: CENTER
+                          widgetId: pecblgxcih
+                          widgetName: Text7
+                          width:
+                            mode: gridUnit
+                            value: 5
+                      collapseWhenHidden: true
+                      detachFromLayout: true
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList: []
+                      gridColumns: 14
+                      height:
+                        mode: fitContent
+                        value: 3
+                      isLoading: false
+                      isVisible: true
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      parentId: 9g96ak0uty
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: CANVAS_WIDGET
+                      widgetId: yopzn1x3b4
+                      widgetName: Canvas8
+                      width:
+                        mode: gridUnit
+                        value: 14
+                  collapseWhenHidden: true
+                  gridColumns: 14
+                  height:
+                    mode: fitContent
+                    value: 5
+                  isLoading: false
+                  isVisible: true
+                  left:
+                    mode: gridUnit
+                    value: 0
+                  parentId: dwpvpsnarl
+                  shouldScrollContents: true
+                  top:
+                    mode: gridUnit
+                    value: 0
+                  type: CONTAINER_WIDGET
+                  widgetId: 9g96ak0uty
+                  widgetName: Container3
+                  width:
+                    mode: gridUnit
+                    value: 14
+              collapseWhenHidden: false
+              detachFromLayout: true
+              distribution: CENTER
+              dragDisabled: true
+              dynamicBindingPathList: []
+              dynamicTriggerPathList: []
+              gridColumns: 96
+              height:
+                mode: fitContent
+                value: 86
+              isLoading: false
+              isVisible: true
+              layout: FIXED_GRID
+              left:
+                mode: gridUnit
+                value: 0
+              minHeight:
+                mode: px
+                value: 1292
+              parentId: lm2jrimm2x
+              shouldScrollContents: true
+              spacing:
+                mode: px
+                value: 12
+              top:
+                mode: gridUnit
+                value: 0
+              type: CANVAS_WIDGET
+              widgetId: dwpvpsnarl
+              widgetName: Canvas1
+              width:
+                mode: gridUnit
+                value: 96
+          collapseWhenHidden: true
+          detachFromLayout: true
+          dragDisabled: true
+          gridColumns: 96
+          height:
+            mode: fitContent
+            value: 88
+          isLoading: false
+          isVisible: true
+          left:
+            mode: gridUnit
+            value: 0
+          parentId: "0"
+          shouldScrollContents: true
+          stackColumnsAt:
+            mode: px
+            value: 480
+          top:
+            mode: gridUnit
+            value: 0
+          type: SECTION_WIDGET
+          widgetId: lm2jrimm2x
+          widgetName: Section1
+          width:
+            mode: gridUnit
+            value: 96
+        - appMode: EDIT
+          canOutsideClickClose: true
+          children:
+            - appMode: EDIT
+              canExtend: true
+              children:
+                - appMode: EDIT
+                  canExtend: true
+                  children:
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList: []
+                      gridColumns: 91
+                      height:
+                        mode: fitContent
+                        value: 4
+                      isLoading: false
+                      isVisible: true
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      parentId: 4d8vbap5w2
+                      text: Add Client
+                      textAlign: LEFT
+                      textProps:
+                        textStyle:
+                          variant: heading3
+                      textStyle: HEADING_1
+                      textType: text
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: TEXT_WIDGET
+                      verticalAlign: AUTO
+                      widgetId: hfrfsr2ipj
+                      widgetName: modalTitle
+                      width:
+                        mode: gridUnit
+                        value: 91
+                  collapseWhenHidden: true
+                  detachFromLayout: true
+                  gridColumns: 96
+                  height:
+                    mode: fitContent
+                    value: 4
+                  isDisabled: false
+                  isInModal: true
+                  isLoading: false
+                  isVisible: true
+                  left:
+                    mode: gridUnit
+                    value: 0
+                  parentId: 2siz0gcycw
+                  shouldScrollContents: true
+                  top:
+                    mode: gridUnit
+                    value: 0
+                  type: CANVAS_WIDGET
+                  widgetId: 4d8vbap5w2
+                  widgetName: Canvas2
+                  width:
+                    mode: gridUnit
+                    value: 0
+              collapseWhenHidden: true
+              detachFromLayout: true
+              dragDisabled: true
+              gridColumns: 96
+              height:
+                mode: fitContent
+                value: 6
+              isLoading: false
+              isVisible: true
+              left:
+                mode: gridUnit
+                value: 0
+              parentId: bylhh8tuwl
+              top:
+                mode: gridUnit
+                value: 0
+              type: SECTION_WIDGET
+              widgetId: 2siz0gcycw
+              widgetName: Section2
+              width:
+                mode: gridUnit
+                value: 0
+            - appMode: EDIT
+              canExtend: true
+              children:
+                - appMode: EDIT
+                  canExtend: true
+                  children:
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultText: ""
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 33
+                      height:
+                        mode: px
+                        value: 60
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isDisabled: false
+                      isLoading: false
+                      isRequired: false
+                      isVertical: true
+                      isVisible: true
+                      label: Client Name as per contract
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onFocus:
+                        - id: r0dec5jk2c
+                      onFocusOut:
+                        - id: 658pexlywt
+                      onSubmit:
+                        - id: 7sjmc9q55t
+                      onTextChanged:
+                        - id: 2sx71s298f
+                      parentId: kkg3vodh7g
+                      placeholderText: Client Name
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: INPUT_WIDGET
+                      widgetId: r3izkwdl00
+                      widgetName: Name
+                      width:
+                        mode: gridUnit
+                        value: 33
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 30
+                      height:
+                        mode: gridUnit
+                        value: 5
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isLoading: false
+                      isRequired: false
+                      isVertical: true
+                      isVisible: true
+                      label: Primary Contact Full Name
+                      left:
+                        mode: gridUnit
+                        value: 34
+                      onFocus:
+                        - id: qh84duldtx
+                      onFocusOut:
+                        - id: er1h836a3g
+                      onSubmit:
+                        - id: r3nz392m8b
+                      onTextChanged:
+                        - id: nj0e6eg8od
+                      parentId: kkg3vodh7g
+                      placeholderText: Full Name
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: INPUT_WIDGET
+                      widgetId: ijo46j6u0m
+                      widgetName: Contact_Name
+                      width:
+                        mode: gridUnit
+                        value: 30
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 31
+                      height:
+                        mode: px
+                        value: 60
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isLoading: false
+                      isRequired: false
+                      isVertical: true
+                      isVisible: true
+                      label: Primary Contact Email Id
+                      left:
+                        mode: gridUnit
+                        value: 65
+                      onFocus:
+                        - id: qh84duldtx
+                      onFocusOut:
+                        - id: er1h836a3g
+                      onSubmit:
+                        - id: 8xku3ck5y1
+                      onTextChanged:
+                        - id: nj0e6eg8od
+                      parentId: kkg3vodh7g
+                      placeholderText: Email
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: INPUT_WIDGET
+                      widgetId: ibed0z8pd9
+                      widgetName: Email
+                      width:
+                        mode: gridUnit
+                        value: 31
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 33
+                      height:
+                        mode: gridUnit
+                        value: 5
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isLoading: false
+                      isRequired: false
+                      isVertical: true
+                      isVisible: true
+                      label: Primary Contact Designation
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onFocus:
+                        - id: r0dec5jk2c
+                      onFocusOut:
+                        - id: 658pexlywt
+                      onSubmit:
+                        - id: n7ib3ewx24
+                      onTextChanged:
+                        - id: b7gbsekegl
+                      parentId: kkg3vodh7g
+                      placeholderText: |
+                        Designation
+                      top:
+                        mode: gridUnit
+                        value: 6
+                      type: INPUT_WIDGET
+                      widgetId: 1weeap25b2
+                      widgetName: Designation
+                      width:
+                        mode: gridUnit
+                        value: 33
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultOptionValue: ""
+                      dynamicBindingPathList:
+                        - key: options
+                      dynamicTriggerPathList:
+                        - key: onOptionChange
+                        - key: onSearchTextChange
+                        - key: onClear
+                      gridColumns: 31
+                      height:
+                        mode: gridUnit
+                        value: 5
+                      isLoading: false
+                      isRequired: false
+                      isVertical: true
+                      isVisible: true
+                      label: Invoicing Currency
+                      left:
+                        mode: gridUnit
+                        value: 65
+                      onClear:
+                        - id: cw49sfd26o
+                      onOptionChange:
+                        - id: 3x8q2g8x5j
+                      onSearchTextChange:
+                        - id: 59kuxi1ju5
+                      options: "{{getCurrencies.response}}"
+                      parentId: kkg3vodh7g
+                      placeholderText: Select currency
+                      top:
+                        mode: gridUnit
+                        value: 6
+                      type: DROP_DOWN_WIDGET
+                      widgetId: c2l0m60xio
+                      widgetName: Currency
+                      width:
+                        mode: gridUnit
+                        value: 31
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultOptionValue: ""
+                      dynamicBindingPathList:
+                        - key: options
+                      dynamicTriggerPathList:
+                        - key: onOptionChange
+                        - key: onSearchTextChange
+                        - key: onClear
+                      gridColumns: 30
+                      height:
+                        mode: px
+                        value: 60
+                      isLoading: false
+                      isRequired: false
+                      isVertical: true
+                      isVisible: true
+                      label: Client Location
+                      left:
+                        mode: gridUnit
+                        value: 34
+                      onClear:
+                        - id: cw49sfd26o
+                      onOptionChange:
+                        - id: gz35mucwp0
+                      onSearchTextChange:
+                        - id: 59kuxi1ju5
+                      options: "{{getCities.response.data}}"
+                      parentId: kkg3vodh7g
+                      placeholderText: Select location
+                      top:
+                        mode: gridUnit
+                        value: 6
+                      type: DROP_DOWN_WIDGET
+                      widgetId: fnfgojlk21
+                      widgetName: Location
+                      width:
+                        mode: gridUnit
+                        value: 30
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 96
+                      height:
+                        mode: gridUnit
+                        value: 8
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isLoading: false
+                      isVertical: true
+                      isVisible: true
+                      label: Notes/Description
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onFocus:
+                        - id: y8qqyk9qt9
+                      onFocusOut:
+                        - id: pqvddg1xpz
+                      onSubmit:
+                        - apiNames:
+                            - postClients
+                          id: qy0koaw4iu
+                          type: executeApi
+                      onTextChanged:
+                        - id: xe7wvrbtae
+                      parentId: kkg3vodh7g
+                      placeholderText: Initial requirements..
+                      top:
+                        mode: gridUnit
+                        value: 12
+                      type: INPUT_WIDGET
+                      widgetId: 541s33eclw
+                      widgetName: Notes
+                      width:
+                        mode: gridUnit
+                        value: 96
+                  collapseWhenHidden: true
+                  detachFromLayout: true
+                  gridColumns: 96
+                  height:
+                    mode: fitContent
+                    value: 20
+                  isDisabled: false
+                  isInModal: true
+                  isLoading: false
+                  isVisible: true
+                  left:
+                    mode: gridUnit
+                    value: 0
+                  minHeight:
+                    mode: gridUnit
+                    value: 21
+                  parentId: vopvqeo7zi
+                  shouldScrollContents: true
+                  top:
+                    mode: gridUnit
+                    value: 0
+                  type: CANVAS_WIDGET
+                  widgetId: kkg3vodh7g
+                  widgetName: Canvas3
+                  width:
+                    mode: gridUnit
+                    value: 96
+              collapseWhenHidden: true
+              detachFromLayout: true
+              dragDisabled: true
+              gridColumns: 96
+              height:
+                mode: fitContent
+                value: 22
+              isLoading: false
+              isVisible: true
+              left:
+                mode: gridUnit
+                value: 0
+              minHeight:
+                mode: gridUnit
+                value: 21
+              parentId: bylhh8tuwl
+              shouldScrollContents: true
+              top:
+                mode: gridUnit
+                value: 0
+              type: SECTION_WIDGET
+              widgetId: vopvqeo7zi
+              widgetName: Section3
+              width:
+                mode: gridUnit
+                value: 0
+            - appMode: EDIT
+              canExtend: true
+              children:
+                - appMode: EDIT
+                  canExtend: true
+                  children:
+                    - animateLoading: true
+                      appMode: EDIT
+                      buttonStyle: SECONDARY_BUTTON
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/button
+                      dynamicTriggerPathList:
+                        - key: onClick
+                      gridColumns: 11
+                      height:
+                        mode: gridUnit
+                        value: 3
+                      iconPosition: LEFT
+                      isDefaultClickDisabled: true
+                      isDisabled: false
+                      isLoading: false
+                      isVisible: true
+                      left:
+                        mode: gridUnit
+                        value: 26
+                      onClick:
+                        - direction: close
+                          id: bylhh8tuwl
+                          name: add_client_modal
+                          type: controlModal
+                      parentId: zw5v488qqd
+                      text: Cancel
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: BUTTON_WIDGET
+                      widgetId: n9dobhkkq5
+                      widgetName: Button2
+                      width:
+                        mode: gridUnit
+                        value: 11
+                    - animateLoading: true
+                      appMode: EDIT
+                      buttonStyle: PRIMARY_BUTTON
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/button
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onClick
+                      gridColumns: 13
+                      height:
+                        mode: gridUnit
+                        value: 3
+                      iconPosition: LEFT
+                      isDefaultClickDisabled: true
+                      isDisabled: false
+                      isLoading: false
+                      isVisible: true
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onClick:
+                        - apiNames:
+                            - postClients
+                          id: 59u82wjkrk
+                          onError:
+                            - apiNames:
+                                - postClients
+                              direction: close
+                              id: u7t21rn8dy
+                              name: add_client_modal
+                              type: controlModal
+                          onSuccess:
+                            - apiNames:
+                                - postClients
+                              direction: close
+                              id: gagcnu8lf3
+                              name: add_client_modal
+                              type: controlModal
+                            - apiNames:
+                                - getClients
+                              id: f6tqp9pkbl
+                              type: executeApi
+                          type: executeApi
+                      parentId: zw5v488qqd
+                      text: Create
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: BUTTON_WIDGET
+                      widgetId: im87kxmc2j
+                      widgetName: Button3
+                      width:
+                        mode: gridUnit
+                        value: 13
+                    - animateLoading: true
+                      appMode: EDIT
+                      buttonStyle: SECONDARY_BUTTON
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/button
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onClick
+                      gridColumns: 11
+                      height:
+                        mode: gridUnit
+                        value: 3
+                      iconPosition: LEFT
+                      isDefaultClickDisabled: true
+                      isDisabled: false
+                      isLoading: false
+                      isVisible: true
+                      left:
+                        mode: gridUnit
+                        value: 14
+                      onClick:
+                        - apiNames:
+                            - postClients
+                          id: e2i0shdr1u
+                          propertyName: text
+                          propertyValue: ""
+                          type: setComponentProperty
+                          widget:
+                            id: r3izkwdl00
+                            name: Name
+                            type: INPUT_WIDGET
+                        - apiNames:
+                            - postClients
+                          event:
+                            id: 90018fee-d702-4436-8161-19a897185e80
+                            name: Event1
+                          id: ls50z9ehws
+                          propertyName: text
+                          type: setComponentProperty
+                          widget:
+                            id: ibed0z8pd9
+                            name: Email
+                            type: INPUT_WIDGET
+                        - apiNames:
+                            - postClients
+                          id: gh4ooo6eo4
+                          propertyName: text
+                          type: setComponentProperty
+                          widget:
+                            id: ijo46j6u0m
+                            name: Contact_Name
+                            type: INPUT_WIDGET
+                        - apiNames:
+                            - postClients
+                          id: eulewm1nm1
+                          propertyName: selectedOptionValue
+                          type: setComponentProperty
+                          widget:
+                            id: c2l0m60xio
+                            name: Currency
+                            type: DROP_DOWN_WIDGET
+                        - apiNames:
+                            - postClients
+                          id: uebio5jtxg
+                          propertyName: text
+                          type: setComponentProperty
+                          widget:
+                            id: 1weeap25b2
+                            name: Designation
+                            type: INPUT_WIDGET
+                        - apiNames:
+                            - postClients
+                          id: qax5qo8u52
+                          propertyName: selectedOptionValue
+                          type: setComponentProperty
+                          widget:
+                            id: fnfgojlk21
+                            name: Location
+                            type: DROP_DOWN_WIDGET
+                        - apiNames:
+                            - postClients
+                          id: m2egm05vdn
+                          propertyName: text
+                          type: setComponentProperty
+                          widget:
+                            id: 541s33eclw
+                            name: Notes
+                            type: INPUT_WIDGET
+                      parentId: zw5v488qqd
+                      text: Reset
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: BUTTON_WIDGET
+                      widgetId: esa726ia84
+                      widgetName: Button4
+                      width:
+                        mode: gridUnit
+                        value: 11
+                  collapseWhenHidden: true
+                  detachFromLayout: true
+                  gridColumns: 96
+                  height:
+                    mode: fitContent
+                    value: 3
+                  isDisabled: false
+                  isInModal: true
+                  isLoading: false
+                  isVisible: true
+                  left:
+                    mode: gridUnit
+                    value: 0
+                  parentId: 1vf8dej82w
+                  shouldScrollContents: true
+                  top:
+                    mode: gridUnit
+                    value: 0
+                  type: CANVAS_WIDGET
+                  widgetId: zw5v488qqd
+                  widgetName: Canvas4
+                  width:
+                    mode: gridUnit
+                    value: 96
+              collapseWhenHidden: true
+              detachFromLayout: true
+              dragDisabled: true
+              gridColumns: 96
+              height:
+                mode: fitContent
+                value: 5
+              isLoading: false
+              isVisible: true
+              left:
+                mode: gridUnit
+                value: 0
+              parentId: bylhh8tuwl
+              shouldScrollContents: true
+              top:
+                mode: gridUnit
+                value: 0
+              type: SECTION_WIDGET
+              widgetId: 1vf8dej82w
+              widgetName: Section4
+              width:
+                mode: gridUnit
+                value: 0
+          detachFromLayout: true
+          dynamicBindingPathList: []
+          dynamicTriggerPathList:
+            - key: onOpen
+            - key: onClose
+          gridColumns: 96
+          hasBackdrop: true
+          height:
+            mode: gridUnit
+            value: 0
+          heightPreset: MEDIUM
+          isLoading: false
+          left:
+            mode: gridUnit
+            value: 0
+          onClose:
+            - id: pmcndcewfm
+          onOpen:
+            - id: 13d5m34r57
+          parentId: "0"
+          shouldScrollContents: true
+          top:
+            mode: gridUnit
+            value: 0
+          type: MODAL_WIDGET
+          widgetId: bylhh8tuwl
+          widgetName: add_client_modal
+          width:
+            mode: gridUnit
+            value: 96
+          widthPreset: MEDIUM
+        - appMode: EDIT
+          canOutsideClickClose: true
+          children:
+            - appMode: EDIT
+              canExtend: true
+              children:
+                - alignment: STRETCH
+                  appMode: EDIT
+                  canExtend: true
+                  children:
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList: []
+                      gridColumns: 70
+                      height:
+                        mode: fitContent
+                        value: 4
+                      isLoading: false
+                      isVisible: true
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      parentId: rr10obnuzz
+                      text: Client details
+                      textAlign: LEFT
+                      textProps:
+                        textStyle:
+                          variant: heading3
+                      textStyle: HEADING_1
+                      textType: text
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: TEXT_WIDGET
+                      verticalAlign: AUTO
+                      widgetId: 3fij174mcp
+                      widgetName: Text2
+                      width:
+                        mode: gridUnit
+                        value: 70
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultText: "{{Table1.selectedRow.Name}}"
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList:
+                        - key: defaultText
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 54
+                      height:
+                        mode: gridUnit
+                        value: 5
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isDisabled: false
+                      isLoading: false
+                      isVertical: true
+                      isVisible: true
+                      label: Name
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onFocus:
+                        - id: oghouztyde
+                      onFocusOut:
+                        - id: stti0f75ks
+                      onSubmit:
+                        - id: qsn4bf0li1
+                      onTextChanged:
+                        - id: 6g39xcsyc1
+                      parentId: rr10obnuzz
+                      placeholderText: Enter text
+                      top:
+                        mode: gridUnit
+                        value: 5
+                      type: INPUT_WIDGET
+                      widgetId: 3uepchza70
+                      widgetName: Input1
+                      width:
+                        mode: gridUnit
+                        value: 54
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultText: "{{Table1.selectedRow.Email}}"
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList:
+                        - key: defaultText
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 54
+                      height:
+                        mode: gridUnit
+                        value: 5
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isDisabled: false
+                      isLoading: false
+                      isVertical: true
+                      isVisible: true
+                      label: Email
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onFocus:
+                        - id: oghouztyde
+                      onFocusOut:
+                        - id: stti0f75ks
+                      onSubmit:
+                        - id: qsn4bf0li1
+                      onTextChanged:
+                        - id: 6g39xcsyc1
+                      parentId: rr10obnuzz
+                      placeholderText: Enter text
+                      top:
+                        mode: gridUnit
+                        value: 11
+                      type: INPUT_WIDGET
+                      widgetId: xkeqveqxbp
+                      widgetName: Input2
+                      width:
+                        mode: gridUnit
+                        value: 54
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultText: "{{Table1.selectedRow['Contact Name']}}"
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList:
+                        - key: defaultText
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 54
+                      height:
+                        mode: gridUnit
+                        value: 5
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isDisabled: false
+                      isLoading: false
+                      isVertical: true
+                      isVisible: true
+                      label: Contact Name
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onFocus:
+                        - id: oghouztyde
+                      onFocusOut:
+                        - id: stti0f75ks
+                      onSubmit:
+                        - id: qsn4bf0li1
+                      onTextChanged:
+                        - id: 6g39xcsyc1
+                      parentId: rr10obnuzz
+                      placeholderText: Enter text
+                      top:
+                        mode: gridUnit
+                        value: 17
+                      type: INPUT_WIDGET
+                      widgetId: v9dlwwmc18
+                      widgetName: Input3
+                      width:
+                        mode: gridUnit
+                        value: 54
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultText: "{{Table1.selectedRow.Designation}}"
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList:
+                        - key: defaultText
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 54
+                      height:
+                        mode: gridUnit
+                        value: 5
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isDisabled: false
+                      isLoading: false
+                      isVertical: true
+                      isVisible: true
+                      label: Designation
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onFocus:
+                        - id: oghouztyde
+                      onFocusOut:
+                        - id: stti0f75ks
+                      onSubmit:
+                        - id: qsn4bf0li1
+                      onTextChanged:
+                        - id: 6g39xcsyc1
+                      parentId: rr10obnuzz
+                      placeholderText: Enter text
+                      top:
+                        mode: gridUnit
+                        value: 23
+                      type: INPUT_WIDGET
+                      widgetId: a4dtkfr33l
+                      widgetName: Input4
+                      width:
+                        mode: gridUnit
+                        value: 54
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultText: "{{Table1.selectedRow.Location}}"
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList:
+                        - key: defaultText
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 54
+                      height:
+                        mode: gridUnit
+                        value: 5
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isDisabled: false
+                      isLoading: false
+                      isVertical: true
+                      isVisible: true
+                      label: Location
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onFocus:
+                        - id: oghouztyde
+                      onFocusOut:
+                        - id: stti0f75ks
+                      onSubmit:
+                        - id: qsn4bf0li1
+                      onTextChanged:
+                        - id: 6g39xcsyc1
+                      parentId: rr10obnuzz
+                      placeholderText: Enter text
+                      top:
+                        mode: gridUnit
+                        value: 29
+                      type: INPUT_WIDGET
+                      widgetId: r1zv6x6cxv
+                      widgetName: Input5
+                      width:
+                        mode: gridUnit
+                        value: 54
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultText: "{{Table1.selectedRow.Currency}}"
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList:
+                        - key: defaultText
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 54
+                      height:
+                        mode: gridUnit
+                        value: 5
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isDisabled: false
+                      isLoading: false
+                      isVertical: true
+                      isVisible: true
+                      label: Currency
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onFocus:
+                        - id: oghouztyde
+                      onFocusOut:
+                        - id: stti0f75ks
+                      onSubmit:
+                        - id: qsn4bf0li1
+                      onTextChanged:
+                        - id: 6g39xcsyc1
+                      parentId: rr10obnuzz
+                      placeholderText: Enter text
+                      top:
+                        mode: gridUnit
+                        value: 35
+                      type: INPUT_WIDGET
+                      widgetId: xunosrssxc
+                      widgetName: Input6
+                      width:
+                        mode: gridUnit
+                        value: 54
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultText: "{{Table1.selectedRow.Notes}}"
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList:
+                        - key: defaultText
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 54
+                      height:
+                        mode: gridUnit
+                        value: 5
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isDisabled: false
+                      isLoading: false
+                      isVertical: true
+                      isVisible: true
+                      label: Notes
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onFocus:
+                        - id: oghouztyde
+                      onFocusOut:
+                        - id: stti0f75ks
+                      onSubmit:
+                        - id: qsn4bf0li1
+                      onTextChanged:
+                        - id: 6g39xcsyc1
+                      parentId: rr10obnuzz
+                      placeholderText: Enter text
+                      top:
+                        mode: gridUnit
+                        value: 41
+                      type: INPUT_WIDGET
+                      widgetId: 40s3zmdkg8
+                      widgetName: Input7
+                      width:
+                        mode: gridUnit
+                        value: 54
+                  collapseWhenHidden: true
+                  detachFromLayout: true
+                  distribution: TOP
+                  dynamicBindingPathList: []
+                  dynamicTriggerPathList: []
+                  gridColumns: 80
+                  height:
+                    mode: fitContent
+                    value: 46
+                  isDisabled: false
+                  isLoading: false
+                  isVisible: true
+                  layout: FIXED_GRID
+                  left:
+                    mode: gridUnit
+                    value: 0
+                  parentId: 0w7r34s1c5
+                  shouldScrollContents: true
+                  spacing:
+                    mode: px
+                    value: 12
+                  top:
+                    mode: gridUnit
+                    value: 0
+                  type: CANVAS_WIDGET
+                  widgetId: rr10obnuzz
+                  widgetName: Canvas5
+                  width:
+                    mode: gridUnit
+                    value: 80
+              collapseWhenHidden: true
+              detachFromLayout: true
+              dragDisabled: true
+              gridColumns: 80
+              height:
+                mode: fitContent
+                value: 48
+              isLoading: false
+              isVisible: true
+              left:
+                mode: gridUnit
+                value: 0
+              parentId: osv3za267n
+              shouldScrollContents: true
+              top:
+                mode: gridUnit
+                value: 0
+              type: SECTION_WIDGET
+              widgetId: 0w7r34s1c5
+              widgetName: Section5
+              width:
+                mode: gridUnit
+                value: 0
+          detachFromLayout: true
+          dynamicBindingPathList: []
+          dynamicTriggerPathList:
+            - key: onOpen
+            - key: onClose
+          gridColumns: 80
+          hasBackdrop: true
+          height:
+            mode: gridUnit
+            value: 69
+          isLoading: false
+          left:
+            mode: gridUnit
+            value: 0
+          onClose:
+            - id: 5ewgyhtkn6
+          onOpen:
+            - id: i4t3hkz3l4
+          parentId: "0"
+          shouldScrollContents: true
+          size: EXTRA_SMALL
+          top:
+            mode: gridUnit
+            value: 0
+          type: SLIDEOUT_WIDGET
+          widgetId: osv3za267n
+          widgetName: Client_details_slideout
+          width:
+            mode: gridUnit
+            value: 80
+        - appMode: EDIT
+          canOutsideClickClose: true
+          children:
+            - appMode: EDIT
+              canExtend: true
+              children:
+                - appMode: EDIT
+                  canExtend: true
+                  children:
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList: []
+                      gridColumns: 91
+                      height:
+                        mode: fitContent
+                        value: 4
+                      isLoading: false
+                      isVisible: true
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      parentId: 0v9inoy2x7
+                      text: Update Client
+                      textAlign: LEFT
+                      textProps:
+                        textStyle:
+                          variant: heading3
+                      textStyle: HEADING_1
+                      textType: text
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: TEXT_WIDGET
+                      verticalAlign: AUTO
+                      widgetId: q6y2vaia56
+                      widgetName: Text15
+                      width:
+                        mode: gridUnit
+                        value: 91
+                  collapseWhenHidden: true
+                  detachFromLayout: true
+                  gridColumns: 96
+                  height:
+                    mode: fitContent
+                    value: 4
+                  isDisabled: false
+                  isInModal: true
+                  isLoading: false
+                  isVisible: true
+                  left:
+                    mode: gridUnit
+                    value: 0
+                  parentId: w5iaovtw21
+                  shouldScrollContents: true
+                  top:
+                    mode: gridUnit
+                    value: 0
+                  type: CANVAS_WIDGET
+                  widgetId: 0v9inoy2x7
+                  widgetName: Canvas9
+                  width:
+                    mode: gridUnit
+                    value: 0
+              collapseWhenHidden: true
+              detachFromLayout: true
+              dragDisabled: true
+              gridColumns: 96
+              height:
+                mode: fitContent
+                value: 6
+              isLoading: false
+              isVisible: true
+              left:
+                mode: gridUnit
+                value: 0
+              parentId: klpwoww2rx
+              top:
+                mode: gridUnit
+                value: 0
+              type: SECTION_WIDGET
+              widgetId: w5iaovtw21
+              widgetName: Section6
+              width:
+                mode: gridUnit
+                value: 0
+            - appMode: EDIT
+              canExtend: true
+              children:
+                - appMode: EDIT
+                  canExtend: true
+                  children:
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultText: ""
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 33
+                      height:
+                        mode: px
+                        value: 60
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isDisabled: false
+                      isLoading: false
+                      isRequired: false
+                      isVertical: true
+                      isVisible: true
+                      label: Client Name as per contract
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onFocus:
+                        - id: r0dec5jk2c
+                      onFocusOut:
+                        - id: 658pexlywt
+                      onSubmit:
+                        - id: 7sjmc9q55t
+                      onTextChanged:
+                        - id: 2sx71s298f
+                      parentId: pi7zn0r5j4
+                      placeholderText: Client Name
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: INPUT_WIDGET
+                      widgetId: srb83mplns
+                      widgetName: Name_update
+                      width:
+                        mode: gridUnit
+                        value: 33
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultText: ""
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 30
+                      height:
+                        mode: gridUnit
+                        value: 5
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isLoading: false
+                      isRequired: false
+                      isVertical: true
+                      isVisible: true
+                      label: Primary Contact Full Name
+                      left:
+                        mode: gridUnit
+                        value: 34
+                      onFocus:
+                        - id: qh84duldtx
+                      onFocusOut:
+                        - id: er1h836a3g
+                      onSubmit:
+                        - id: r3nz392m8b
+                      onTextChanged:
+                        - id: nj0e6eg8od
+                      parentId: pi7zn0r5j4
+                      placeholderText: Full Name
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: INPUT_WIDGET
+                      widgetId: gz6z64lt4o
+                      widgetName: Contact_Name_update
+                      width:
+                        mode: gridUnit
+                        value: 30
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 31
+                      height:
+                        mode: gridUnit
+                        value: 5
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isLoading: false
+                      isRequired: true
+                      isVertical: true
+                      isVisible: true
+                      label: Primary Contact Email Id
+                      left:
+                        mode: gridUnit
+                        value: 64
+                      maxLength: "10"
+                      minLength: "5"
+                      onFocus:
+                        - id: qh84duldtx
+                      onFocusOut:
+                        - id: er1h836a3g
+                      onSubmit:
+                        - id: 8xku3ck5y1
+                      onTextChanged:
+                        - id: nj0e6eg8od
+                      parentId: pi7zn0r5j4
+                      placeholderText: Email
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: INPUT_WIDGET
+                      widgetId: n4dpab3xlv
+                      widgetName: Email_update
+                      width:
+                        mode: gridUnit
+                        value: 31
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 33
+                      height:
+                        mode: gridUnit
+                        value: 5
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isLoading: false
+                      isRequired: false
+                      isVertical: true
+                      isVisible: true
+                      label: Primary Contact Designation
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onFocus:
+                        - id: r0dec5jk2c
+                      onFocusOut:
+                        - id: 658pexlywt
+                      onSubmit:
+                        - id: n7ib3ewx24
+                      onTextChanged:
+                        - id: b7gbsekegl
+                      parentId: pi7zn0r5j4
+                      placeholderText: |
+                        Designation
+                      top:
+                        mode: gridUnit
+                        value: 6
+                      type: INPUT_WIDGET
+                      widgetId: qi0szkt8wn
+                      widgetName: Designation_update
+                      width:
+                        mode: gridUnit
+                        value: 33
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultOptionValue: ""
+                      dynamicBindingPathList:
+                        - key: options
+                      dynamicTriggerPathList:
+                        - key: onOptionChange
+                        - key: onSearchTextChange
+                        - key: onClear
+                      gridColumns: 31
+                      height:
+                        mode: gridUnit
+                        value: 5
+                      isLoading: false
+                      isRequired: false
+                      isVertical: true
+                      isVisible: true
+                      label: Invoicing Currency
+                      left:
+                        mode: gridUnit
+                        value: 65
+                      onClear:
+                        - id: cw49sfd26o
+                      onOptionChange:
+                        - id: 3x8q2g8x5j
+                      onSearchTextChange:
+                        - id: 59kuxi1ju5
+                      options: "{{getCurrencies.response}}"
+                      parentId: pi7zn0r5j4
+                      placeholderText: Select currency
+                      top:
+                        mode: gridUnit
+                        value: 6
+                      type: DROP_DOWN_WIDGET
+                      widgetId: qqcs1ox7os
+                      widgetName: Currency_update
+                      width:
+                        mode: gridUnit
+                        value: 31
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultOptionValue: ""
+                      dynamicBindingPathList:
+                        - key: options
+                      dynamicTriggerPathList:
+                        - key: onOptionChange
+                        - key: onSearchTextChange
+                        - key: onClear
+                      gridColumns: 30
+                      height:
+                        mode: px
+                        value: 60
+                      isLoading: false
+                      isRequired: false
+                      isVertical: true
+                      isVisible: true
+                      label: Client Location
+                      left:
+                        mode: gridUnit
+                        value: 34
+                      onClear:
+                        - id: cw49sfd26o
+                      onOptionChange:
+                        - id: gz35mucwp0
+                      onSearchTextChange:
+                        - id: 59kuxi1ju5
+                      options: "{{getCities.response.data}}"
+                      parentId: pi7zn0r5j4
+                      placeholderText: Select location
+                      top:
+                        mode: gridUnit
+                        value: 6
+                      type: DROP_DOWN_WIDGET
+                      widgetId: 7gh13elkw1
+                      widgetName: Location_update
+                      width:
+                        mode: gridUnit
+                        value: 30
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 96
+                      height:
+                        mode: gridUnit
+                        value: 8
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isLoading: false
+                      isVertical: true
+                      isVisible: true
+                      label: Notes/Description
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onFocus:
+                        - id: y8qqyk9qt9
+                      onFocusOut:
+                        - id: pqvddg1xpz
+                      onSubmit:
+                        - apiNames:
+                            - postClients
+                          id: qy0koaw4iu
+                          type: executeApi
+                      onTextChanged:
+                        - id: xe7wvrbtae
+                      parentId: pi7zn0r5j4
+                      placeholderText: Initial requirements..
+                      top:
+                        mode: gridUnit
+                        value: 12
+                      type: INPUT_WIDGET
+                      widgetId: gfue75zjeo
+                      widgetName: Notes_update
+                      width:
+                        mode: gridUnit
+                        value: 96
+                  collapseWhenHidden: true
+                  detachFromLayout: true
+                  gridColumns: 96
+                  height:
+                    mode: fitContent
+                    value: 20
+                  isDisabled: false
+                  isInModal: true
+                  isLoading: false
+                  isVisible: true
+                  left:
+                    mode: gridUnit
+                    value: 0
+                  minHeight:
+                    mode: gridUnit
+                    value: 21
+                  parentId: zbyjxj9ipr
+                  shouldScrollContents: true
+                  top:
+                    mode: gridUnit
+                    value: 0
+                  type: CANVAS_WIDGET
+                  widgetId: pi7zn0r5j4
+                  widgetName: Canvas10
+                  width:
+                    mode: gridUnit
+                    value: 96
+              collapseWhenHidden: true
+              detachFromLayout: true
+              dragDisabled: true
+              gridColumns: 96
+              height:
+                mode: fitContent
+                value: 22
+              isLoading: false
+              isVisible: true
+              left:
+                mode: gridUnit
+                value: 0
+              minHeight:
+                mode: gridUnit
+                value: 21
+              parentId: klpwoww2rx
+              shouldScrollContents: true
+              top:
+                mode: gridUnit
+                value: 0
+              type: SECTION_WIDGET
+              widgetId: zbyjxj9ipr
+              widgetName: Section7
+              width:
+                mode: gridUnit
+                value: 0
+            - appMode: EDIT
+              canExtend: true
+              children:
+                - appMode: EDIT
+                  canExtend: true
+                  children:
+                    - animateLoading: true
+                      appMode: EDIT
+                      buttonStyle: SECONDARY_BUTTON
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/button
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onClick
+                      gridColumns: 11
+                      height:
+                        mode: gridUnit
+                        value: 3
+                      iconPosition: LEFT
+                      isDefaultClickDisabled: true
+                      isDisabled: false
+                      isLoading: false
+                      isVisible: true
+                      left:
+                        mode: gridUnit
+                        value: 26
+                      onClick:
+                        - direction: close
+                          id: bylhh8tuwl
+                          name: update_client_modal
+                          type: controlModal
+                      parentId: rw3hwjumlt
+                      text: Cancel
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: BUTTON_WIDGET
+                      widgetId: 8wauq24uwp
+                      widgetName: Button5
+                      width:
+                        mode: gridUnit
+                        value: 11
+                    - animateLoading: true
+                      appMode: EDIT
+                      buttonStyle: PRIMARY_BUTTON
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/button
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onClick
+                      gridColumns: 13
+                      height:
+                        mode: gridUnit
+                        value: 3
+                      iconPosition: LEFT
+                      isDefaultClickDisabled: true
+                      isDisabled: false
+                      isLoading: false
+                      isVisible: true
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onClick:
+                        - apiNames:
+                            - updateClient
+                          id: 59u82wjkrk
+                          onError:
+                            - apiNames:
+                                - postClients
+                              direction: close
+                              id: u7t21rn8dy
+                              name: update_client_modal
+                              type: controlModal
+                          onSuccess:
+                            - apiNames:
+                                - getClients
+                              id: f6tqp9pkbl
+                              type: executeApi
+                            - apiNames:
+                                - postClients
+                              direction: close
+                              id: gagcnu8lf3
+                              name: update_client_modal
+                              type: controlModal
+                            - id: y40sgtzydk
+                          type: executeApi
+                      parentId: rw3hwjumlt
+                      text: Update
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: BUTTON_WIDGET
+                      widgetId: hbm30bt848
+                      widgetName: Button6
+                      width:
+                        mode: gridUnit
+                        value: 13
+                    - animateLoading: true
+                      appMode: EDIT
+                      buttonStyle: SECONDARY_BUTTON
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/button
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onClick
+                      gridColumns: 11
+                      height:
+                        mode: gridUnit
+                        value: 3
+                      iconPosition: LEFT
+                      isDefaultClickDisabled: true
+                      isDisabled: false
+                      isLoading: false
+                      isVisible: true
+                      left:
+                        mode: gridUnit
+                        value: 14
+                      onClick:
+                        - apiNames:
+                            - postClients
+                          id: e2i0shdr1u
+                          propertyName: text
+                          propertyValue: ""
+                          type: setComponentProperty
+                          widget:
+                            id: srb83mplns
+                            name: Name_update
+                            type: INPUT_WIDGET
+                        - apiNames:
+                            - postClients
+                          event:
+                            id: 90018fee-d702-4436-8161-19a897185e80
+                            name: Event1
+                          id: ls50z9ehws
+                          propertyName: text
+                          type: setComponentProperty
+                          widget:
+                            id: n4dpab3xlv
+                            name: Email_update
+                            type: INPUT_WIDGET
+                        - apiNames:
+                            - postClients
+                          id: gh4ooo6eo4
+                          propertyName: text
+                          type: setComponentProperty
+                          widget:
+                            id: gz6z64lt4o
+                            name: Contact_Name_update
+                            type: INPUT_WIDGET
+                        - apiNames:
+                            - postClients
+                          id: eulewm1nm1
+                          propertyName: selectedOptionValue
+                          type: setComponentProperty
+                          widget:
+                            id: qqcs1ox7os
+                            name: Currency_update
+                            type: DROP_DOWN_WIDGET
+                        - apiNames:
+                            - postClients
+                          id: uebio5jtxg
+                          propertyName: text
+                          type: setComponentProperty
+                          widget:
+                            id: qi0szkt8wn
+                            name: Designation_update
+                            type: INPUT_WIDGET
+                        - apiNames:
+                            - postClients
+                          id: qax5qo8u52
+                          propertyName: selectedOptionValue
+                          type: setComponentProperty
+                          widget:
+                            id: 7gh13elkw1
+                            name: Location_update
+                            type: DROP_DOWN_WIDGET
+                        - apiNames:
+                            - postClients
+                          id: m2egm05vdn
+                          propertyName: text
+                          type: setComponentProperty
+                          widget:
+                            id: gfue75zjeo
+                            name: Notes_update
+                            type: INPUT_WIDGET
+                      parentId: rw3hwjumlt
+                      text: Reset
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: BUTTON_WIDGET
+                      widgetId: 3da1l7vnez
+                      widgetName: Button7
+                      width:
+                        mode: gridUnit
+                        value: 11
+                  collapseWhenHidden: true
+                  detachFromLayout: true
+                  gridColumns: 96
+                  height:
+                    mode: fitContent
+                    value: 3
+                  isDisabled: false
+                  isInModal: true
+                  isLoading: false
+                  isVisible: true
+                  left:
+                    mode: gridUnit
+                    value: 0
+                  parentId: 8n4quvjo98
+                  shouldScrollContents: true
+                  top:
+                    mode: gridUnit
+                    value: 0
+                  type: CANVAS_WIDGET
+                  widgetId: rw3hwjumlt
+                  widgetName: Canvas11
+                  width:
+                    mode: gridUnit
+                    value: 96
+              collapseWhenHidden: true
+              detachFromLayout: true
+              dragDisabled: true
+              gridColumns: 96
+              height:
+                mode: fitContent
+                value: 5
+              isLoading: false
+              isVisible: true
+              left:
+                mode: gridUnit
+                value: 0
+              parentId: klpwoww2rx
+              shouldScrollContents: true
+              top:
+                mode: gridUnit
+                value: 0
+              type: SECTION_WIDGET
+              widgetId: 8n4quvjo98
+              widgetName: Section8
+              width:
+                mode: gridUnit
+                value: 0
+          detachFromLayout: true
+          dynamicBindingPathList: []
+          dynamicTriggerPathList:
+            - key: onOpen
+            - key: onClose
+          gridColumns: 96
+          hasBackdrop: true
+          height:
+            mode: gridUnit
+            value: 0
+          heightPreset: MEDIUM
+          isLoading: false
+          left:
+            mode: gridUnit
+            value: 0
+          onClose:
+            - id: pmcndcewfm
+          onOpen:
+            - apiNames:
+                - postClients
+              id: ebhxcj6be7
+              propertyName: text
+              propertyValue: "{{Table1.selectedRow.Name}}"
+              type: setComponentProperty
+              widget:
+                id: srb83mplns
+                name: Name_update
+                type: INPUT_WIDGET
+            - apiNames:
+                - postClients
+              id: 13d5m34r57
+              propertyName: text
+              propertyValue: "{{Table1.selectedRow['Contact Name']}}"
+              type: setComponentProperty
+              widget:
+                id: gz6z64lt4o
+                name: Contact_Name_update
+                type: INPUT_WIDGET
+            - apiNames:
+                - postClients
+              id: nef0mr96yu
+              propertyName: text
+              propertyValue: "{{Table1.selectedRow.Email}}"
+              type: setComponentProperty
+              widget:
+                id: n4dpab3xlv
+                name: Email_update
+                type: INPUT_WIDGET
+            - apiNames:
+                - postClients
+              id: iesswiwdph
+              propertyName: text
+              propertyValue: "{{Table1.selectedRow.Designation}}"
+              type: setComponentProperty
+              widget:
+                id: qi0szkt8wn
+                name: Designation_update
+                type: INPUT_WIDGET
+            - apiNames:
+                - postClients
+              id: oko146dl96
+              propertyName: selectedOptionValue
+              propertyValue: "{{Table1.selectedRow.Location}}"
+              type: setComponentProperty
+              widget:
+                id: 7gh13elkw1
+                name: Location_update
+                type: DROP_DOWN_WIDGET
+            - apiNames:
+                - postClients
+              id: 6bqlfi9e02
+              propertyName: selectedOptionValue
+              propertyValue: "{{Table1.selectedRow.Currency}}"
+              type: setComponentProperty
+              widget:
+                id: qqcs1ox7os
+                name: Currency_update
+                type: DROP_DOWN_WIDGET
+            - apiNames:
+                - postClients
+              id: xpdbc3vnv8
+              propertyName: text
+              propertyValue: "{{Table1.selectedRow.Notes}}"
+              type: setComponentProperty
+              widget:
+                id: gfue75zjeo
+                name: Notes_update
+                type: INPUT_WIDGET
+          parentId: "0"
+          shouldScrollContents: true
+          top:
+            mode: gridUnit
+            value: 0
+          type: MODAL_WIDGET
+          widgetId: klpwoww2rx
+          widgetName: update_client_modal
+          width:
+            mode: gridUnit
+            value: 96
+          widthPreset: MEDIUM
+        - appMode: EDIT
+          canOutsideClickClose: true
+          children:
+            - appMode: EDIT
+              canExtend: true
+              children:
+                - appMode: EDIT
+                  canExtend: true
+                  children:
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList: []
+                      gridColumns: 91
+                      height:
+                        mode: fitContent
+                        value: 4
+                      isLoading: false
+                      isVisible: true
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      parentId: e6893iilfp
+                      text: Update Client
+                      textAlign: LEFT
+                      textProps:
+                        textStyle:
+                          variant: heading3
+                      textStyle: HEADING_1
+                      textType: text
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: TEXT_WIDGET
+                      verticalAlign: AUTO
+                      widgetId: 15m144mv44
+                      widgetName: Text16
+                      width:
+                        mode: gridUnit
+                        value: 91
+                  collapseWhenHidden: true
+                  detachFromLayout: true
+                  gridColumns: 96
+                  height:
+                    mode: fitContent
+                    value: 4
+                  isDisabled: false
+                  isInModal: true
+                  isLoading: false
+                  isVisible: true
+                  left:
+                    mode: gridUnit
+                    value: 0
+                  parentId: 62zu65na81
+                  shouldScrollContents: true
+                  top:
+                    mode: gridUnit
+                    value: 0
+                  type: CANVAS_WIDGET
+                  widgetId: e6893iilfp
+                  widgetName: Canvas12
+                  width:
+                    mode: gridUnit
+                    value: 0
+              collapseWhenHidden: true
+              detachFromLayout: true
+              dragDisabled: true
+              gridColumns: 96
+              height:
+                mode: fitContent
+                value: 6
+              isLoading: false
+              isVisible: true
+              left:
+                mode: gridUnit
+                value: 0
+              parentId: 4tbfcoyc9e
+              top:
+                mode: gridUnit
+                value: 0
+              type: SECTION_WIDGET
+              widgetId: 62zu65na81
+              widgetName: Section9
+              width:
+                mode: gridUnit
+                value: 0
+            - appMode: EDIT
+              canExtend: true
+              children:
+                - appMode: EDIT
+                  canExtend: true
+                  children:
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultText: ""
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 33
+                      height:
+                        mode: px
+                        value: 60
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isDisabled: false
+                      isLoading: false
+                      isRequired: false
+                      isVertical: true
+                      isVisible: true
+                      label: Client Name as per contract
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onFocus:
+                        - id: r0dec5jk2c
+                      onFocusOut:
+                        - id: 658pexlywt
+                      onSubmit:
+                        - id: 7sjmc9q55t
+                      onTextChanged:
+                        - id: 2sx71s298f
+                      parentId: 56u9rd6wgw
+                      placeholderText: Client Name
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: INPUT_WIDGET
+                      widgetId: 16c6w6u35v
+                      widgetName: Input8
+                      width:
+                        mode: gridUnit
+                        value: 33
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultText: ""
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 30
+                      height:
+                        mode: gridUnit
+                        value: 5
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isLoading: false
+                      isRequired: false
+                      isVertical: true
+                      isVisible: true
+                      label: Primary Contact Full Name
+                      left:
+                        mode: gridUnit
+                        value: 34
+                      onFocus:
+                        - id: qh84duldtx
+                      onFocusOut:
+                        - id: er1h836a3g
+                      onSubmit:
+                        - id: r3nz392m8b
+                      onTextChanged:
+                        - id: nj0e6eg8od
+                      parentId: 56u9rd6wgw
+                      placeholderText: Full Name
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: INPUT_WIDGET
+                      widgetId: rttt7ey1ty
+                      widgetName: Input9
+                      width:
+                        mode: gridUnit
+                        value: 30
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 31
+                      height:
+                        mode: px
+                        value: 60
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isLoading: false
+                      isRequired: false
+                      isVertical: true
+                      isVisible: true
+                      label: Primary Contact Email Id
+                      left:
+                        mode: gridUnit
+                        value: 65
+                      onFocus:
+                        - id: qh84duldtx
+                      onFocusOut:
+                        - id: er1h836a3g
+                      onSubmit:
+                        - id: 8xku3ck5y1
+                      onTextChanged:
+                        - id: nj0e6eg8od
+                      parentId: 56u9rd6wgw
+                      placeholderText: Email
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: INPUT_WIDGET
+                      widgetId: mxc0fua5ri
+                      widgetName: Input10
+                      width:
+                        mode: gridUnit
+                        value: 31
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 33
+                      height:
+                        mode: gridUnit
+                        value: 5
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isLoading: false
+                      isRequired: false
+                      isVertical: true
+                      isVisible: true
+                      label: Primary Contact Designation
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onFocus:
+                        - id: r0dec5jk2c
+                      onFocusOut:
+                        - id: 658pexlywt
+                      onSubmit:
+                        - id: n7ib3ewx24
+                      onTextChanged:
+                        - id: b7gbsekegl
+                      parentId: 56u9rd6wgw
+                      placeholderText: |
+                        Designation
+                      top:
+                        mode: gridUnit
+                        value: 6
+                      type: INPUT_WIDGET
+                      widgetId: e1i00c3rfx
+                      widgetName: Input11
+                      width:
+                        mode: gridUnit
+                        value: 33
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultOptionValue: ""
+                      dynamicBindingPathList:
+                        - key: options
+                      dynamicTriggerPathList:
+                        - key: onOptionChange
+                        - key: onSearchTextChange
+                        - key: onClear
+                      gridColumns: 31
+                      height:
+                        mode: gridUnit
+                        value: 5
+                      isLoading: false
+                      isRequired: false
+                      isVertical: true
+                      isVisible: true
+                      label: Invoicing Currency
+                      left:
+                        mode: gridUnit
+                        value: 65
+                      onClear:
+                        - id: cw49sfd26o
+                      onOptionChange:
+                        - id: 3x8q2g8x5j
+                      onSearchTextChange:
+                        - id: 59kuxi1ju5
+                      options: "{{getCurrencies.response}}"
+                      parentId: 56u9rd6wgw
+                      placeholderText: Select currency
+                      top:
+                        mode: gridUnit
+                        value: 6
+                      type: DROP_DOWN_WIDGET
+                      widgetId: 4dvdwxcff3
+                      widgetName: Dropdown1
+                      width:
+                        mode: gridUnit
+                        value: 31
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      defaultOptionValue: ""
+                      dynamicBindingPathList:
+                        - key: options
+                      dynamicTriggerPathList:
+                        - key: onOptionChange
+                        - key: onSearchTextChange
+                        - key: onClear
+                      gridColumns: 30
+                      height:
+                        mode: px
+                        value: 60
+                      isLoading: false
+                      isRequired: false
+                      isVertical: true
+                      isVisible: true
+                      label: Client Location
+                      left:
+                        mode: gridUnit
+                        value: 34
+                      onClear:
+                        - id: cw49sfd26o
+                      onOptionChange:
+                        - id: gz35mucwp0
+                      onSearchTextChange:
+                        - id: 59kuxi1ju5
+                      options: "{{getCities.response.data}}"
+                      parentId: 56u9rd6wgw
+                      placeholderText: Select location
+                      top:
+                        mode: gridUnit
+                        value: 6
+                      type: DROP_DOWN_WIDGET
+                      widgetId: i382faahd7
+                      widgetName: Dropdown2
+                      width:
+                        mode: gridUnit
+                        value: 30
+                    - animateLoading: true
+                      appMode: EDIT
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/input
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onTextChanged
+                        - key: onSubmit
+                        - key: onFocus
+                        - key: onFocusOut
+                      gridColumns: 96
+                      height:
+                        mode: gridUnit
+                        value: 8
+                      iconPosition: LEFT
+                      inputType: TEXT
+                      isLoading: false
+                      isVertical: true
+                      isVisible: true
+                      label: Notes/Description
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onFocus:
+                        - id: y8qqyk9qt9
+                      onFocusOut:
+                        - id: pqvddg1xpz
+                      onSubmit:
+                        - apiNames:
+                            - postClients
+                          id: qy0koaw4iu
+                          type: executeApi
+                      onTextChanged:
+                        - id: xe7wvrbtae
+                      parentId: 56u9rd6wgw
+                      placeholderText: Initial requirements..
+                      top:
+                        mode: gridUnit
+                        value: 12
+                      type: INPUT_WIDGET
+                      widgetId: wlixsdoe0n
+                      widgetName: Input12
+                      width:
+                        mode: gridUnit
+                        value: 96
+                  collapseWhenHidden: true
+                  detachFromLayout: true
+                  gridColumns: 96
+                  height:
+                    mode: fitContent
+                    value: 20
+                  isDisabled: false
+                  isInModal: true
+                  isLoading: false
+                  isVisible: true
+                  left:
+                    mode: gridUnit
+                    value: 0
+                  minHeight:
+                    mode: gridUnit
+                    value: 21
+                  parentId: a1b1c4u61g
+                  shouldScrollContents: true
+                  top:
+                    mode: gridUnit
+                    value: 0
+                  type: CANVAS_WIDGET
+                  widgetId: 56u9rd6wgw
+                  widgetName: Canvas13
+                  width:
+                    mode: gridUnit
+                    value: 96
+              collapseWhenHidden: true
+              detachFromLayout: true
+              dragDisabled: true
+              gridColumns: 96
+              height:
+                mode: fitContent
+                value: 22
+              isLoading: false
+              isVisible: true
+              left:
+                mode: gridUnit
+                value: 0
+              minHeight:
+                mode: gridUnit
+                value: 21
+              parentId: 4tbfcoyc9e
+              shouldScrollContents: true
+              top:
+                mode: gridUnit
+                value: 0
+              type: SECTION_WIDGET
+              widgetId: a1b1c4u61g
+              widgetName: Section10
+              width:
+                mode: gridUnit
+                value: 0
+            - appMode: EDIT
+              canExtend: true
+              children:
+                - appMode: EDIT
+                  canExtend: true
+                  children:
+                    - animateLoading: true
+                      appMode: EDIT
+                      buttonStyle: SECONDARY_BUTTON
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/button
+                      dynamicTriggerPathList:
+                        - key: onClick
+                      gridColumns: 11
+                      height:
+                        mode: gridUnit
+                        value: 3
+                      iconPosition: LEFT
+                      isDefaultClickDisabled: true
+                      isDisabled: false
+                      isLoading: false
+                      isVisible: true
+                      left:
+                        mode: gridUnit
+                        value: 26
+                      onClick:
+                        - direction: close
+                          id: bylhh8tuwl
+                          name: add_client_modal
+                          type: controlModal
+                      parentId: uwwb2vjo4l
+                      text: Cancel
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: BUTTON_WIDGET
+                      widgetId: kbesjti18u
+                      widgetName: Button8
+                      width:
+                        mode: gridUnit
+                        value: 11
+                    - animateLoading: true
+                      appMode: EDIT
+                      buttonStyle: PRIMARY_BUTTON
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/button
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onClick
+                      gridColumns: 13
+                      height:
+                        mode: gridUnit
+                        value: 3
+                      iconPosition: LEFT
+                      isDefaultClickDisabled: true
+                      isDisabled: false
+                      isLoading: false
+                      isVisible: true
+                      left:
+                        mode: gridUnit
+                        value: 0
+                      onClick:
+                        - apiNames:
+                            - postClients
+                          id: 59u82wjkrk
+                          onError:
+                            - apiNames:
+                                - postClients
+                              direction: close
+                              id: u7t21rn8dy
+                              name: add_client_modal
+                              type: controlModal
+                          onSuccess:
+                            - apiNames:
+                                - postClients
+                              direction: close
+                              id: gagcnu8lf3
+                              name: add_client_modal
+                              type: controlModal
+                            - apiNames:
+                                - getClients
+                              id: f6tqp9pkbl
+                              type: executeApi
+                          type: executeApi
+                      parentId: uwwb2vjo4l
+                      text: Update
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: BUTTON_WIDGET
+                      widgetId: sygrkxn9wc
+                      widgetName: Button9
+                      width:
+                        mode: gridUnit
+                        value: 13
+                    - animateLoading: true
+                      appMode: EDIT
+                      buttonStyle: SECONDARY_BUTTON
+                      collapseWhenHidden: true
+                      docsUrl: https://docs.superblocks.com/components/button
+                      dynamicBindingPathList: []
+                      dynamicTriggerPathList:
+                        - key: onClick
+                      gridColumns: 11
+                      height:
+                        mode: gridUnit
+                        value: 3
+                      iconPosition: LEFT
+                      isDefaultClickDisabled: true
+                      isDisabled: false
+                      isLoading: false
+                      isVisible: true
+                      left:
+                        mode: gridUnit
+                        value: 14
+                      onClick:
+                        - apiNames:
+                            - postClients
+                          id: e2i0shdr1u
+                          propertyName: text
+                          propertyValue: ""
+                          type: setComponentProperty
+                          widget:
+                            id: srb83mplns
+                            name: Name_update
+                            type: INPUT_WIDGET
+                        - apiNames:
+                            - postClients
+                          event:
+                            id: 90018fee-d702-4436-8161-19a897185e80
+                            name: Event1
+                          id: ls50z9ehws
+                          propertyName: text
+                          type: setComponentProperty
+                          widget:
+                            id: n4dpab3xlv
+                            name: Email_update
+                            type: INPUT_WIDGET
+                        - apiNames:
+                            - postClients
+                          id: gh4ooo6eo4
+                          propertyName: text
+                          type: setComponentProperty
+                          widget:
+                            id: gz6z64lt4o
+                            name: Contact_Name_update
+                            type: INPUT_WIDGET
+                        - apiNames:
+                            - postClients
+                          id: eulewm1nm1
+                          propertyName: selectedOptionValue
+                          type: setComponentProperty
+                          widget:
+                            id: qqcs1ox7os
+                            name: Currency_update
+                            type: DROP_DOWN_WIDGET
+                        - apiNames:
+                            - postClients
+                          id: uebio5jtxg
+                          propertyName: text
+                          type: setComponentProperty
+                          widget:
+                            id: qi0szkt8wn
+                            name: Designation_update
+                            type: INPUT_WIDGET
+                        - apiNames:
+                            - postClients
+                          id: qax5qo8u52
+                          propertyName: selectedOptionValue
+                          type: setComponentProperty
+                          widget:
+                            id: 7gh13elkw1
+                            name: Location_update
+                            type: DROP_DOWN_WIDGET
+                        - apiNames:
+                            - postClients
+                          id: m2egm05vdn
+                          propertyName: text
+                          type: setComponentProperty
+                          widget:
+                            id: gfue75zjeo
+                            name: Notes_update
+                            type: INPUT_WIDGET
+                      parentId: uwwb2vjo4l
+                      text: Reset
+                      top:
+                        mode: gridUnit
+                        value: 0
+                      type: BUTTON_WIDGET
+                      widgetId: 6mdfpb9vco
+                      widgetName: Button10
+                      width:
+                        mode: gridUnit
+                        value: 11
+                  collapseWhenHidden: true
+                  detachFromLayout: true
+                  gridColumns: 96
+                  height:
+                    mode: fitContent
+                    value: 3
+                  isDisabled: false
+                  isInModal: true
+                  isLoading: false
+                  isVisible: true
+                  left:
+                    mode: gridUnit
+                    value: 0
+                  parentId: 41l8txcthb
+                  shouldScrollContents: true
+                  top:
+                    mode: gridUnit
+                    value: 0
+                  type: CANVAS_WIDGET
+                  widgetId: uwwb2vjo4l
+                  widgetName: Canvas14
+                  width:
+                    mode: gridUnit
+                    value: 96
+              collapseWhenHidden: true
+              detachFromLayout: true
+              dragDisabled: true
+              gridColumns: 96
+              height:
+                mode: fitContent
+                value: 5
+              isLoading: false
+              isVisible: true
+              left:
+                mode: gridUnit
+                value: 0
+              parentId: 4tbfcoyc9e
+              shouldScrollContents: true
+              top:
+                mode: gridUnit
+                value: 0
+              type: SECTION_WIDGET
+              widgetId: 41l8txcthb
+              widgetName: Section11
+              width:
+                mode: gridUnit
+                value: 0
+          detachFromLayout: true
+          dynamicBindingPathList: []
+          dynamicTriggerPathList:
+            - key: onOpen
+            - key: onClose
+          gridColumns: 96
+          hasBackdrop: true
+          height:
+            mode: gridUnit
+            value: 0
+          heightPreset: MEDIUM
+          isLoading: false
+          left:
+            mode: gridUnit
+            value: 0
+          onClose:
+            - id: pmcndcewfm
+          onOpen:
+            - apiNames:
+                - postClients
+              id: ebhxcj6be7
+              propertyName: text
+              propertyValue: "{{Table1.selectedRow.Name}}"
+              type: setComponentProperty
+              widget:
+                id: srb83mplns
+                name: Name_update
+                type: INPUT_WIDGET
+            - apiNames:
+                - postClients
+              id: 13d5m34r57
+              propertyName: text
+              propertyValue: "{{Table1.selectedRow['Contact Name']}}"
+              type: setComponentProperty
+              widget:
+                id: gz6z64lt4o
+                name: Contact_Name_update
+                type: INPUT_WIDGET
+            - apiNames:
+                - postClients
+              id: nef0mr96yu
+              type: executeApi
+            - id: iesswiwdph
+          parentId: "0"
+          shouldScrollContents: true
+          top:
+            mode: gridUnit
+            value: 0
+          type: MODAL_WIDGET
+          widgetId: 4tbfcoyc9e
+          widgetName: Modal1
+          width:
+            mode: gridUnit
+            value: 96
+          widthPreset: MEDIUM
+      detachFromLayout: true
+      dynamicBindingPathList: []
+      embedding:
+        emittedEvents: {}
+        propertyMap: {}
+        triggerableEvents: {}
+      events:
+        eventMap: {}
+      gridColumns: 96
+      height:
+        mode: gridUnit
+        value: 99
+      layoutVersion: 5
+      left:
+        mode: gridUnit
+        value: 0
+      minWidth:
+        mode: px
+        value: 300
+      stateVars:
+        stateVarMap:
+          0237b5fa-4af3-44c2-a596-d5e0bc94d5bf:
+            createdAt: 1722383104333
+            defaultValue: ""
+            id: 0237b5fa-4af3-44c2-a596-d5e0bc94d5bf
+            name: TempVar2
+            persistance: Temporary
+          0d66fa53-d1f7-4480-945b-6922899241ed:
+            createdAt: 1722395980299
+            defaultValue: "'Add'"
+            dynamicBindingPathList: []
+            dynamicTriggerPathList: []
+            id: 0d66fa53-d1f7-4480-945b-6922899241ed
+            name: modalTitlePrefix
+            persistance: Temporary
+          66027aea-51dc-4397-a878-47f4c4b6f9a6:
+            createdAt: 1722383100852
+            defaultValue: ""
+            id: 66027aea-51dc-4397-a878-47f4c4b6f9a6
+            name: TempVar1
+            persistance: Temporary
+      timers:
+        timerMap: {}
+      top:
+        mode: gridUnit
+        value: 0
+      type: PAGE_WIDGET
+      version: 8
+      widgetId: "0"
+      widgetName: Page1
+      width:
+        mode: gridUnit
+        value: 0
+    id: 820487c6-e07d-4279-ad4c-c0a1e3a70862
+name: Page1

@@ -1,0 +1,19 @@
+blocks:
+  - name: Step1
+    step:
+      gsheets:
+        action: READ_SPREADSHEET
+        extractFirstRowHeader: true
+        includeHeaderRow: false
+        preserveHeaderRow: false
+        sheetTitle: Sheet1
+        spreadsheetId: 11mCNCuKQGpoWCkLjsTKrbGrmQUtQCIpFYZWx_uqF04A
+      integration: 40329f7a-7f75-42c1-90c1-a3685dfcdecc
+metadata:
+  id: 7cfe6b1a-2dbb-4fd7-afe5-5e8de4dd7e13
+  name: getClients
+  organization: 7f3ff8ab-bfe7-4300-9e85-574f5781668c
+trigger:
+  application:
+    id: 0a15cf9a-8466-4489-bc08-6b9d3c53efd4
+    pageId: f52f4c96-d387-448a-9411-bfd0161251da

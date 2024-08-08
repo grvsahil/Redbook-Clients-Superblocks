@@ -1,0 +1,51 @@
+blocks:
+  - name: Step1
+    step:
+      integration: restapi
+      restapi:
+        body: ""
+        bodyType: jsonBody
+        fileFormKey: ""
+        fileName: ""
+        formData: []
+        headers:
+          - key: Content-Type
+            value: application/json
+            valueOptions: []
+          - key: ""
+            value: ""
+            valueOptions: []
+        httpMethod: POST
+        jsonBody: ""
+        params:
+          - key: email
+            value: "{{Table1.selectedRow.Email}}"
+            valueOptions: []
+          - key: Name
+            value: "{{Name_update.value}}"
+            valueOptions: []
+          - key: ContactName
+            value: "{{Contact_Name_update.value}}"
+            valueOptions: []
+          - key: Designation
+            value: "{{Designation_update.value}}"
+            valueOptions: []
+          - key: Location
+            value: "{{Location_update.selectedOptionValue}}"
+            valueOptions: []
+          - key: Currency
+            value: "{{Currency_update.selectedOptionValue}}"
+            valueOptions: []
+          - key: Notes
+            value: "{{Notes_update.value}}"
+            valueOptions: []
+        path: https://script.google.com/a/macros/gopherslab.com/s/AKfycbxVZtKM85pN038gv6XeOS6cWQinBTyAVJOwEe-pMKFNHrNc5vxEga9a-CuMwVQLN4kbCQ/exec
+        responseType: auto
+metadata:
+  id: 7ff64598-953c-43cc-83fb-f76ec12c2141
+  name: updateClient
+  organization: 7f3ff8ab-bfe7-4300-9e85-574f5781668c
+trigger:
+  application:
+    id: 0a15cf9a-8466-4489-bc08-6b9d3c53efd4
+    pageId: f52f4c96-d387-448a-9411-bfd0161251da

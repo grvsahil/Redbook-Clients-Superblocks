@@ -1,0 +1,33 @@
+configuration: {}
+id: 0a15cf9a-8466-4489-bc08-6b9d3c53efd4
+name: Redbook- Clients
+organizationId: 7f3ff8ab-bfe7-4300-9e85-574f5781668c
+settings:
+  theme:
+    borderRadius:
+      mode: px
+      value: 4
+    mode: LIGHT
+    padding:
+      bottom:
+        mode: px
+        value: 12
+      left:
+        mode: px
+        value: 12
+      right:
+        mode: px
+        value: 12
+      top:
+        mode: px
+        value: 12
+    palette:
+      dark:
+        appBackgroundColor: "#f8f8f8"
+        primaryColor: "#29BBFF"
+      light:
+        appBackgroundColor: "#F9FAFB"
+        primaryColor: "#121517"
+    primaryColor: "#29BBFF"
+    typeFace: Roboto
+    version: 4

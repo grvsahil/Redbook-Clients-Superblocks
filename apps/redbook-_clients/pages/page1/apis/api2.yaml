@@ -1,0 +1,16 @@
+blocks:
+  - name: Step1
+    step:
+      integration: workflow
+      workflow:
+        custom: {}
+        queryParams: {}
+        workflow: ""
+metadata:
+  id: 81efc646-43f1-4dc2-a222-09d611ae19d6
+  name: API2
+  organization: 7f3ff8ab-bfe7-4300-9e85-574f5781668c
+trigger:
+  application:
+    id: 0a15cf9a-8466-4489-bc08-6b9d3c53efd4
+    pageId: f52f4c96-d387-448a-9411-bfd0161251da

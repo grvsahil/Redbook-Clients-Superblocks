@@ -1,0 +1,33 @@
+blocks:
+  - name: Step1
+    step:
+      integration: restapi
+      restapi:
+        body: ""
+        bodyType: jsonBody
+        fileFormKey: ""
+        fileName: ""
+        formData: []
+        headers:
+          - key: Content-Type
+            value: application/json
+            valueOptions: []
+          - key: ""
+            value: ""
+            valueOptions: []
+        httpMethod: GET
+        jsonBody: ""
+        params:
+          - key: ""
+            value: ""
+            valueOptions: []
+        path: http://65.2.189.185:1337/api/clients
+        responseType: auto
+metadata:
+  id: d9f700cf-9cb9-41d9-85cb-9a6824e3accb
+  name: API4
+  organization: 7f3ff8ab-bfe7-4300-9e85-574f5781668c
+trigger:
+  application:
+    id: 0a15cf9a-8466-4489-bc08-6b9d3c53efd4
+    pageId: f52f4c96-d387-448a-9411-bfd0161251da

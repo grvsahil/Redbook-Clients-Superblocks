@@ -1,0 +1,22 @@
+blocks:
+  - name: Step1
+    step:
+      gsheets:
+        action: READ_SPREADSHEET
+        extractFirstRowHeader: true
+        headerRowNumber: "1"
+        includeHeaderRow: true
+        preserveHeaderRow: true
+        range: A1:D100
+        sheetTitle: ""
+        spreadsheetId: ""
+        writeToDestinationType: APPEND
+      integration: 40329f7a-7f75-42c1-90c1-a3685dfcdecc
+metadata:
+  id: a3ba5821-e7f9-44ef-b127-40f339908db1
+  name: API3
+  organization: 7f3ff8ab-bfe7-4300-9e85-574f5781668c
+trigger:
+  application:
+    id: 0a15cf9a-8466-4489-bc08-6b9d3c53efd4
+    pageId: f52f4c96-d387-448a-9411-bfd0161251da

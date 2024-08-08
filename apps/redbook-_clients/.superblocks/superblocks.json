@@ -1,0 +1,22 @@
+{
+  "apis": {},
+  "configType": "APPLICATION",
+  "id": "0a15cf9a-8466-4489-bc08-6b9d3c53efd4",
+  "pages": {
+    "f52f4c96-d387-448a-9411-bfd0161251da": {
+      "apis": {
+        "0d88f7e2-ea47-4488-abaa-0e75725048f3": "postClients",
+        "36df8434-9547-472f-87b0-b6be8d69b27d": "API1",
+        "43050da1-128a-4c0c-8937-e2328d8eeff6": "getCities",
+        "7cfe6b1a-2dbb-4fd7-afe5-5e8de4dd7e13": "getClients",
+        "7ff64598-953c-43cc-83fb-f76ec12c2141": "updateClient",
+        "81efc646-43f1-4dc2-a222-09d611ae19d6": "API2",
+        "a3ba5821-e7f9-44ef-b127-40f339908db1": "API3",
+        "d80bc15f-fdf8-4ab5-bc69-099bd63430b7": "getCurrencies",
+        "d9f700cf-9cb9-41d9-85cb-9a6824e3accb": "API4"
+      },
+      "id": "f52f4c96-d387-448a-9411-bfd0161251da",
+      "name": "Page1"
+    }
+  }
+}

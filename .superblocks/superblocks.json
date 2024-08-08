@@ -1,0 +1,12 @@
+{
+  "configType": "ROOT",
+  "metadata": {
+    "cliVersion": "1.9.0"
+  },
+  "resources": {
+    "0a15cf9a-8466-4489-bc08-6b9d3c53efd4": {
+      "location": "apps/redbook-_clients",
+      "resourceType": "APPLICATION"
+    }
+  }
+}

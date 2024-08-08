@@ -1,0 +1,36 @@
+blocks:
+  - name: Step1
+    step:
+      integration: restapi
+      restapi:
+        body: |-
+          {
+          	 "country": "india"
+          }
+        bodyType: jsonBody
+        fileFormKey: ""
+        fileName: ""
+        formData: []
+        headers:
+          - key: Content-Type
+            value: application/json
+            valueOptions: []
+          - key: ""
+            value: ""
+            valueOptions: []
+        httpMethod: POST
+        jsonBody: ""
+        params:
+          - key: ""
+            value: ""
+            valueOptions: []
+        path: https://countriesnow.space/api/v0.1/countries/cities
+        responseType: auto
+metadata:
+  id: 43050da1-128a-4c0c-8937-e2328d8eeff6
+  name: getCities
+  organization: 7f3ff8ab-bfe7-4300-9e85-574f5781668c
+trigger:
+  application:
+    id: 0a15cf9a-8466-4489-bc08-6b9d3c53efd4
+    pageId: f52f4c96-d387-448a-9411-bfd0161251da
